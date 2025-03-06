@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="calculator">
+    <div class="display">0</div>
+    <div class="mode-switch">
+        <button id="calc-mode" class="active">Calculadora</button>
+        <button id="convert-mode">Conversión</button>
+    </div>
+    
+    <div class="buttons">
+        <button class="number">7</button>
+        <button class="number">8</button>
+        <button class="number">9</button>
+        <button class="operator">/</button>
+        <button class="number">4</button>
+        <button class="number">5</button>
+        <button class="number">6</button>
+        <button class="operator">*</button>
+        <button class="number">1</button>
+        <button class="number">2</button>
+        <button class="number">3</button>
+        <button class="operator">-</button>
+        <button class="number">0</button>
+        <button id="clear">C</button>
+        <button id="equals" class="calculation-control">=</button>
+        <button class="operator calculation-control">+</button>
+    </div>
+    
+    <div class="converter-controls" style="display: none;">
+        <div class="unit-selectors">
+            <select id="from-unit">
+                <option value="m">Metros</option>
+                <option value="km">Kilómetros</option>
+                <option value="cm">Centímetros</option>
+                <option value="mm">Milímetros</option>
+            </select>
+            <span>a</span>
+            <select id="to-unit">
+                <option value="m">Metros</option>
+                <option value="km">Kilómetros</option>
+                <option value="cm">Centímetros</option>
+                <option value="mm">Milímetros</option>
+            </select>
+        </div>
+        <button id="convert-btn">Convertir</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
